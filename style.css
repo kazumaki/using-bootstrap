@@ -6,18 +6,24 @@ body {
 }
 
 header {
-  max-width: 1280px;
+  max-width: 1310px;
   width: 100vw;
   margin: 0 auto;
 }
 
 main {
-  max-width: 1280px;
+  max-width: 1310px;
   width: 100vw;
   margin: 0 auto;
   margin-top: 3px;
   background: white;
   padding: 25px;
+}
+
+.featured-stories {
+  position: sticky;
+  top: 0;
+  bottom: 0;
 }
 
 .header-central-logo img {
@@ -85,7 +91,37 @@ main {
   position: relative;
 }
 
+.culture-travel-box .footer {
+  padding: 5px;
+}
+
+.more-stories-box {
+  border-top: solid 1px grey;
+  padding: 10px 0px;
+}
+
+.opinion-box {
+  padding: 5px;
+  border-top: solid 1px grey;
+}
+
+.opinion-box.first {
+  border-top: none;
+}
+
+.latest-news-box {
+  padding: 5px;
+  border-top: solid 1px grey;
+}
+
+.latest-news-box.first {
+  border-top: none;
+}
+
 @media (max-width: 991px){
+  .featured-stories {
+    position: static;
+  }
   .header-central-logo {
     align-self: center;
   }
