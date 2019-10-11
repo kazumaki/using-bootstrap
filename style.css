@@ -23,7 +23,6 @@ main {
 .featured-stories {
   position: sticky;
   top: 0;
-  bottom: 0;
 }
 
 .header-central-logo img {
@@ -118,10 +117,23 @@ main {
   border-top: none;
 }
 
+.right-column-container {
+  position: sticky;
+  top: 0;
+}
+
+.sing-up-container {
+  width: 320px;
+  background: rgba(0, 0, 0, 0.15);
+  border: solid 1px grey;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px){
   .featured-stories {
     position: static;
   }
+
   .header-central-logo {
     align-self: center;
   }
@@ -130,5 +142,9 @@ main {
     align-self: center;
     padding: 0;
     padding-right: 20px;
+  }
+
+  .sing-up-container {
+    position: static;
   }
 }
