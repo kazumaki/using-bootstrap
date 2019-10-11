@@ -134,6 +134,15 @@ main {
   margin-top: 35px;
 }
 
+.category {
+  font-weight: bold;
+  padding: 2px;
+}
+
+.in-the-magazine-category .category:first-child{
+  background: red;
+}
+
 @media (max-width: 991px){
   .featured-stories {
     position: static;
