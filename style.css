@@ -148,6 +148,11 @@ main {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.slide-category {
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 991px){
   .featured-stories {
     position: static;
