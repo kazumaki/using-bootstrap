@@ -1,7 +1,4 @@
 body {
-  width: 100%;
-  margin: 0;
-  max-width: 100%;
   background: #f4f5f6;
   font-family: 'Oswald', sans-serif;
 }
@@ -35,10 +32,7 @@ footer {
 }
 
 main {
-  width: 100vw;
   margin: 0 auto;
-  margin-top: 0px;
-  background: white;
   padding: 25px;
 }
 
@@ -62,7 +56,6 @@ main {
 
 .header-central-logo img {
   max-height: 100px;
-  margin-right: 0;
 }
 
 .header-upper-row {
@@ -70,26 +63,17 @@ main {
 }
 
 .header-date {
-  align-self: flex-end;
   padding: 25px;
   padding-bottom: 10px;
 }
 
 .header-login {
-  display: flex;
-  justify-content: flex-end;
   padding: 25px;
   padding-bottom: 10px;
-  align-items: flex-end;
 }
 
 .header-login button {
   height: 35px;
-}
-
-.main-nav {
-  width: 100%;
-  justify-content: space-between;
 }
 
 .navbar-toggler-icon {
@@ -103,27 +87,10 @@ main {
   margin-top: 10px;
 }
 
-.main-nav-container {
-  background: white;
-}
-
-.featured-header {
-  position: relative;
-}
-
 .featured-category {
-  position: absolute;
   bottom: 0;
   padding: 5px;
   background: rgba(255, 255, 255, 0.8);
-}
-
-.featured-category h4 {
-  margin-bottom: 0;
-}
-
-.top-story-header {
-  position: relative;
 }
 
 .culture-travel-box .footer {
@@ -131,26 +98,15 @@ main {
 }
 
 .more-stories-box {
-  border-top: solid 1px grey;
   padding: 10px 0px;
 }
 
 .opinion-box {
   padding: 5px;
-  border-top: solid 1px grey;
-}
-
-.opinion-box.first {
-  border-top: none;
 }
 
 .latest-news-box {
   padding: 5px;
-  border-top: solid 1px grey;
-}
-
-.latest-news-box.first {
-  border-top: none;
 }
 
 .right-column-container {
@@ -219,10 +175,6 @@ main {
 @media (max-width: 991px){
   .featured-stories {
     position: static;
-  }
-
-  .header-central-logo {
-    align-self: center;
   }
 
   .header-login {

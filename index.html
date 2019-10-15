@@ -13,21 +13,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Newsweek - News</title>
   </head>
-  <body>
+  <body class="w-100 mw-100 m-0">
     <header>
       <div class="container-fluid header-upper-row fixed-top">
         <div class="row">
-          <div class="col-lg-3 d-none d-lg-block header-date">
+          <div class="col-lg-3 d-none d-lg-block align-self-end header-date">
             <h5 class="text-white">Thu, Oct 10, 2019</h5>
           </div>
-          <div class="col-3 col-lg-6 text-center header-central-logo">
-            <img class="img-fluid logo" src="images/logo.svg" alt="Newsweek Logo">
+          <div class="col-3 col-lg-6 text-center align-self-md-center header-central-logo">
+            <img class="img-fluid logo mr-0" src="images/logo.svg" alt="Newsweek Logo">
           </div>
-          <div class="col-9 col-lg-3 header-login">
+          <div class="col-9 col-lg-3 d-flex justify-content-end align-items-end header-login">
             <button class="sign-in-btn border-0 text-white">SIGN IN</button>
             <button class="subscribe-in-btn border-0 bg-white">SUBSCRIBE <i class="fa fas fa-chevron-right"></i></button>
             <nav class="navbar-nav d-lg-none">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hiddenNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hiddenNavBar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fas fa-bars fa-lg"></i></span>
               </button>
               <div class="collapse navbar-collapse bg-white" id="hiddenNavBar">
@@ -42,18 +42,16 @@
                   <li><a class="nav-link" href="#">Health</a></li>
                   <li><a class="nav-link" href="#">Opinion</a></li>
                   <li><a class="nav-link" href="#">Vantage</a></li>
-                  <form>
-                    <input type="text"><i class="fa fas fa-search fa-lg"></i>
-                  </form>
+                  <li><input type="text"><i class="fa fas fa-search fa-lg"></i></li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
       </div>
-      <div class="container-fluid main-nav-container">
+      <div class="container-fluid bg-white main-nav-container">
         <nav class="navbar navbar-expand-lg d-none d-lg-block">
-            <ul class="nav navbar-nav main-nav">
+            <ul class="nav navbar-nav w-100 justify-content-between main-nav">
               <li><a class="nav-link font-weight-bold" href="#">U.S.</a></li>
               <li><a class="nav-link font-weight-bold" href="#">World</a></li>
               <li><a class="nav-link font-weight-bold" href="#">Business</a></li>
@@ -64,25 +62,23 @@
               <li><a class="nav-link font-weight-bold" href="#">Health</a></li>
               <li><a class="nav-link font-weight-bold" href="#">Opinion</a></li>
               <li><a class="nav-link font-weight-bold" href="#">Vantage</a></li>
-              <form class="d-flex align-items-center">
-                <input class="border-0" type="text"><i class="fa fas fa-search fa-lg"></i>
-              </form>
+              <li><input class="border-0" type="text"><i class="fa fas fa-search fa-lg"></i></li>
             </ul>
         </nav>
       </div>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid vw-100 mt-0 bg-white">
       <div class="row main-row">
         <div class="col-12 col-md-5 col-lg-3 left-column">
           <h6 class="text-secondary">FEATURED STORIES</h6>
           <div class="featured-stories">
             <div class="featured-box">
-              <div class="featured-header">
+              <div class="position-relative featured-header">
                 <a href="#">
                   <img class="img-fluid featured-image one" src="images/putin.jpg" alt="Vladmir Putin">
                 </a>
-                <div class="featured-category">
-                  <h4>NEWS</h4>
+                <div class="position-absolute featured-category">
+                  <h4 class="mb-0">NEWS</h4>
                 </div>
               </div>
               <a class="stories-link" href="#">
@@ -141,7 +137,7 @@
         <div class="col-md-7 col-lg-5 middle-column">
           <h6 class="text-secondary">TOP STORY</h6>
           <div class="top-story-box">
-            <div class="top-story-header">
+            <div class="position-relative top-story-header">
               <a href="#">
                 <img class="img-fluid" src="images/viden.jpg" alt="Joe Biden">
               </a>
@@ -209,7 +205,7 @@
           </div>
           <div class="container-fluid more-stories">
             <h6 class="text-secondary">MORE STORIES</h6>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
@@ -220,7 +216,7 @@
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
@@ -231,7 +227,7 @@
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
@@ -242,7 +238,7 @@
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
@@ -253,7 +249,7 @@
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
@@ -264,7 +260,7 @@
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
@@ -275,7 +271,7 @@
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
@@ -286,7 +282,7 @@
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
-            <div class="row more-stories-box">
+            <div class="row border-top more-stories-box">
               <div class="col-md-4">
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
@@ -302,7 +298,7 @@
         <div class="col-lg-4 right-column">
           <div class="container-fluid right-column-container">
             <h4>OPINION</h4>
-            <div class="row opinion-box first">
+            <div class="row opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/diahann-billings-burford.png" alt="Diahann"> 
               </div>
@@ -311,7 +307,7 @@
                 <h6>BY DIAGANN BILLINGS-BURFORD</h6>
               </div>
             </div>
-            <div class="row opinion-box">
+            <div class="row border-top opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/jennifer-weiss-wolf.png" alt="Diahann"> 
               </div>
@@ -320,7 +316,7 @@
                 <h6>BY JENNIFER WEISS-WOLF</h6>
               </div>
             </div>
-            <div class="row opinion-box">
+            <div class="row border-top opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/diahann-billings-burford.png" alt="Diahann"> 
               </div>
@@ -329,7 +325,7 @@
                 <h6>BY DIAGANN BILLINGS-BURFORD</h6>
               </div>
             </div>
-            <div class="row opinion-box">
+            <div class="row border-top opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/jennifer-weiss-wolf.png" alt="Diahann"> 
               </div>
@@ -338,7 +334,7 @@
                 <h6>BY JENNIFER WEISS-WOLF</h6>
               </div>
             </div>
-            <div class="row opinion-box">
+            <div class="row border-top opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/diahann-billings-burford.png" alt="Diahann"> 
               </div>
@@ -347,7 +343,7 @@
                 <h6>BY DIAGANN BILLINGS-BURFORD</h6>
               </div>
             </div>
-            <div class="row opinion-box">
+            <div class="row border-top opinion-box">
               <div class="col-3 col-md-1 col-lg-3">
                 <img class="rounded-circle" src="images/jennifer-weiss-wolf.png" alt="Diahann"> 
               </div>
@@ -358,22 +354,6 @@
             </div>
             <div class="container-fluid latest-news-container">
               <h4>LATEST NEWS</h4>
-              <div class="row latest-news-box first">
-                <div class="col-5">
-                  <img class="img-fluid" src="images/simone.jpg" alt="Simone Biles">
-                </div>
-                <div class="col-7">
-                  <h6>How Simone Biles Stacks Up Against Previous Olympic Greats</h6>
-                </div>
-              </div>
-              <div class="row latest-news-box">
-                <div class="col-5">
-                  <img class="img-fluid" src="images/turkish.jpg" alt="Simone Biles">
-                </div>
-                <div class="col-7">
-                  <h6>Pentagon on Turkey Syria Attack: 'I Can't Explain Why They Did What They</h6>
-                </div>
-              </div>
               <div class="row latest-news-box">
                 <div class="col-5">
                   <img class="img-fluid" src="images/simone.jpg" alt="Simone Biles">
@@ -382,7 +362,7 @@
                   <h6>How Simone Biles Stacks Up Against Previous Olympic Greats</h6>
                 </div>
               </div>
-              <div class="row latest-news-box">
+              <div class="row border-top latest-news-box">
                 <div class="col-5">
                   <img class="img-fluid" src="images/turkish.jpg" alt="Simone Biles">
                 </div>
@@ -390,7 +370,7 @@
                   <h6>Pentagon on Turkey Syria Attack: 'I Can't Explain Why They Did What They</h6>
                 </div>
               </div>
-              <div class="row latest-news-box ">
+              <div class="row border-top latest-news-box">
                 <div class="col-5">
                   <img class="img-fluid" src="images/simone.jpg" alt="Simone Biles">
                 </div>
@@ -398,7 +378,7 @@
                   <h6>How Simone Biles Stacks Up Against Previous Olympic Greats</h6>
                 </div>
               </div>
-              <div class="row latest-news-box">
+              <div class="row border-top latest-news-box">
                 <div class="col-5">
                   <img class="img-fluid" src="images/turkish.jpg" alt="Simone Biles">
                 </div>
@@ -406,7 +386,23 @@
                   <h6>Pentagon on Turkey Syria Attack: 'I Can't Explain Why They Did What They</h6>
                 </div>
               </div>
-              <div class="row latest-news-box">
+              <div class="row border-top latest-news-box ">
+                <div class="col-5">
+                  <img class="img-fluid" src="images/simone.jpg" alt="Simone Biles">
+                </div>
+                <div class="col-7">
+                  <h6>How Simone Biles Stacks Up Against Previous Olympic Greats</h6>
+                </div>
+              </div>
+              <div class="row border-top latest-news-box">
+                <div class="col-5">
+                  <img class="img-fluid" src="images/turkish.jpg" alt="Simone Biles">
+                </div>
+                <div class="col-7">
+                  <h6>Pentagon on Turkey Syria Attack: 'I Can't Explain Why They Did What They</h6>
+                </div>
+              </div>
+              <div class="row border-top latest-news-box">
                 <div class="col-5">
                   <img class="img-fluid" src="images/simone.jpg" alt="Simone Biles">
                 </div>
@@ -876,8 +872,8 @@
               <div class="row">
                 <div class="col-lg-4 position-relative">
                   <div class="magazine-image-box">
-                    <img class="magazine-image" src="images/trump-magazine.jpg">
-                    <img class="position-absolute magazine-image second-magazine" src="images/trump-magazine.jpg">
+                    <img class="magazine-image" src="images/trump-magazine.jpg" alt="Trump Magazine">
+                    <img class="position-absolute magazine-image second-magazine" src="images/trump-magazine.jpg" alt="Trump Magazine">
                   </div>
                 </div>
                 <div class="d-flex flex-column align-items-center col-12 offset-lg-2 col-lg-6">
