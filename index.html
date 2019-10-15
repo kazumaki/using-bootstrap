@@ -9,12 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Newsweek - News</title>
   </head>
   <body>
     <header>
-      <div class="container-fluid header-upper-row">
+      <div class="container-fluid header-upper-row fixed-top">
         <div class="row">
           <div class="col-lg-3 d-none d-lg-block header-date">
             <h5 class="text-white">Thu, Oct 10, 2019</h5>
@@ -23,14 +24,14 @@
             <img class="img-fluid logo" src="images/logo.svg" alt="Newsweek Logo">
           </div>
           <div class="col-9 col-lg-3 header-login">
-            <button class="sign-in-btn">SIGN IN</button>
-            <button class="subscribe-in-btn">SUBSCRIBE</button>
+            <button class="sign-in-btn border-0 text-white">SIGN IN</button>
+            <button class="subscribe-in-btn border-0 bg-white">SUBSCRIBE <i class="fa fas fa-chevron-right"></i></button>
             <nav class="navbar-nav d-lg-none">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hiddenNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fas fa-bars fa-lg"></i></span>
               </button>
-              <div class="collapse navbar-collapse" id="hiddenNavBar">
-                <ul class="nav navbar-nav hiddenNav">
+              <div class="collapse navbar-collapse bg-white" id="hiddenNavBar">
+                <ul class="nav navbar-nav hiddenNav bg-white">
                   <li><a class="nav-link" href="#">U.S.</a></li>
                   <li><a class="nav-link" href="#">World</a></li>
                   <li><a class="nav-link" href="#">Business</a></li>
@@ -53,18 +54,18 @@
       <div class="container-fluid main-nav-container">
         <nav class="navbar navbar-expand-lg d-none d-lg-block">
             <ul class="nav navbar-nav main-nav">
-              <li><a class="nav-link" href="#">U.S.</a></li>
-              <li><a class="nav-link" href="#">World</a></li>
-              <li><a class="nav-link" href="#">Business</a></li>
-              <li><a class="nav-link" href="#">Tech & Science</a></li>
-              <li><a class="nav-link" href="#">Culture</a></li>
-              <li><a class="nav-link" href="#">Newsgeek</a></li>
-              <li><a class="nav-link" href="#">Sports</a></li>
-              <li><a class="nav-link" href="#">Health</a></li>
-              <li><a class="nav-link" href="#">Opinion</a></li>
-              <li><a class="nav-link" href="#">Vantage</a></li>
-              <form>
-                <input type="text"><i class="fa fas fa-search fa-lg"></i>
+              <li><a class="nav-link font-weight-bold" href="#">U.S.</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">World</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Business</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Tech & Science</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Culture</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Newsgeek</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Sports</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Health</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Opinion</a></li>
+              <li><a class="nav-link font-weight-bold" href="#">Vantage</a></li>
+              <form class="d-flex align-items-center">
+                <input class="border-0" type="text"><i class="fa fas fa-search fa-lg"></i>
               </form>
             </ul>
         </nav>
@@ -73,7 +74,7 @@
     <main class="container-fluid">
       <div class="row main-row">
         <div class="col-lg-3 left-column">
-          <h4>FEATURED STORIES</h4>
+          <h6 class="text-secondary">FEATURED STORIES</h6>
           <div class="featured-stories">
             <div class="featured-box">
               <div class="featured-header">
@@ -84,7 +85,7 @@
                   <h4>NEWS</h4>
                 </div>
               </div>
-              <a href="#">
+              <a class="stories-link" href="#">
                 <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
               </a>
               <p>Thousands of ISIS fighters are being held by Kurdish-led forces in northeastern Syria, 
@@ -99,47 +100,61 @@
                   <h4>NEWS</h4>
                 </div>
               </div>
-              <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              <a class="stories-link" href="#">
+                <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              </a>
               <p>Thousands of ISIS fighters are being held by Kurdish-led forces in northeastern Syria, 
                 but the Turkish assault threatens the security of the detention centers there.</p>
             </div>
             <div class="featured-box">
               <div class="featured-header">
-                <img class="img-fluid featured-image one" src="images/putin.jpg" alt="Vladmir Putin">
+                <a href="#">
+                  <img class="img-fluid featured-image one" src="images/putin.jpg" alt="Vladmir Putin">
+                </a>
                 <div class="featured-category">
                   <h4>NEWS</h4>
                 </div>
               </div>
-              <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              <a class="stories-link" href="#">
+                <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              </a>
               <p>Thousands of ISIS fighters are being held by Kurdish-led forces in northeastern Syria, 
                 but the Turkish assault threatens the security of the detention centers there.</p>
             </div>
             <div class="featured-box">
               <div class="featured-header">
-                <img class="img-fluid featured-image one" src="images/putin.jpg" alt="Vladmir Putin">
+                <a href="#">
+                  <img class="img-fluid featured-image one" src="images/putin.jpg" alt="Vladmir Putin">
+                </a>
                 <div class="featured-category">
                   <h4>NEWS</h4>
                 </div>
               </div>
-              <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              <a class="stories-link" href="#">
+                <h3>Vladimir Putin Warns Turkey Might Lose Control ISIS Fighters in Syria</h3>
+              </a>
               <p>Thousands of ISIS fighters are being held by Kurdish-led forces in northeastern Syria, 
                 but the Turkish assault threatens the security of the detention centers there.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-5 middle-column">
-          <h4>TOP STORY</h4>
+          <h6 class="text-secondary">TOP STORY</h6>
           <div class="top-story-box">
             <div class="top-story-header">
-              <img class="img-fluid" src="images/viden.jpg" alt="Joe Biden">
+              <a href="#">
+                <img class="img-fluid" src="images/viden.jpg" alt="Joe Biden">
+              </a>
               <div class="featured-category">
                 <h4>POLITICS</h4>
               </div>
             </div>
-            <h3>Joe Biden Tells Donors He'll Beat Donal Trump 'Like a Drum'</h3>
+            <a class="stories-link" href="#">
+              <h3>Joe Biden Tells Donors He'll Beat Donal Trump 'Like a Drum'</h3>
+            </a>
             <p>The former vice president also labeled Rudy Giuliani "a thug" amid the Ukraine and impeachment saga.</p>
           </div>
-          <div class="culture-travel">
+          <div class="culture-travel bg-light">
             <h4>CULTURE & TRAVEL</h4>
             <div class="row culture-travel-row">
               <div class="col-md-6 culture-travel-left">
@@ -199,7 +214,9 @@
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
               <div class="col-md-8">
-                <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                <a class="stories-link" href="#">
+                  <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                </a>
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
@@ -208,7 +225,9 @@
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
               <div class="col-md-8">
-                <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                <a class="stories-link" href="#">
+                  <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                </a>
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
@@ -217,7 +236,9 @@
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
               <div class="col-md-8">
-                <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                <a class="stories-link" href="#">
+                  <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                </a>
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
@@ -226,7 +247,9 @@
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
               <div class="col-md-8">
-                <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                <a class="stories-link" href="#">
+                  <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                </a>
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
@@ -235,7 +258,9 @@
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
               <div class="col-md-8">
-                <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                <a class="stories-link" href="#">
+                  <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                </a>
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
@@ -244,7 +269,9 @@
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
               <div class="col-md-8">
-                <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                <a class="stories-link" href="#">
+                  <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                </a>
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>
@@ -253,7 +280,9 @@
                 <img class="img-fluid" src="images/turkish.jpg" alt="turkish army">
               </div>
               <div class="col-md-8">
-                <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                <a class="stories-link" href="#">
+                  <h5>Turkey Condemns NATO Allies for Arming Kurdish 'Terrorists'</h5>
+                </a>
                 <p>Turkey is facing widespread condemnation for its military operation against Kurdish-led forces in northeastern Syria</p>
               </div>
             </div>
@@ -262,7 +291,9 @@
                 <img class="img-fluid" src="images/police-ice.jpg" alt="ICE Police">
               </div>
               <div class="col-md-8">
-                <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                <a class="stories-link" href="#">
+                  <h5>ICE and CBP Workers Turning to Immigration Protest Group for Help Leaving</h5>
+                </a>
                 <p>"We've been a little floored by the response," said Never Again Action Atlanta organizer Emily Baselt.</p>
               </div>
             </div>

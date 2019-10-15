@@ -3,6 +3,7 @@ body {
   margin: 0;
   max-width: 100%;
   background: #f4f5f6;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container-fluid {
@@ -17,17 +18,46 @@ footer {
   margin: 0 auto;
 }
 
+.sign-in-btn {
+  background: red;
+}
+
+.subscribe-in-btn {
+  color: red;
+}
+
+.main-nav li a {
+  color: black;
+}
+
+.main-nav li a:hover {
+  color: red;
+}
+
 main {
   width: 100vw;
   margin: 0 auto;
-  margin-top: 3px;
+  margin-top: 0px;
   background: white;
   padding: 25px;
+}
+
+.main-nav-container {
+  margin-top: 100px;
 }
 
 .featured-stories {
   position: sticky;
   top: 0;
+}
+
+.stories-link {
+  color: black;
+}
+
+.stories-link:hover {
+  text-decoration-color: red;
+  color: black;
 }
 
 .header-central-logo img {
@@ -68,6 +98,7 @@ main {
 
 .hiddenNav {
   position: fixed;
+  z-index: 1000;
   right: 0;
   margin-top: 10px;
 }
