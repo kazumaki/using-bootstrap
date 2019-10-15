@@ -5,9 +5,9 @@ In this project my task was to replicate the responsive behavior of [Newsweek](h
 
 ## Built With
 
-*[Bootstrap](https://getbootstrap.com/) - The framework used.
-*[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Stylesheet language used.
-*[HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup language used.
+* [Bootstrap](https://getbootstrap.com/) - The framework used.
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Stylesheet language used.
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup language used.
 
-# Authors
+## Authors
 * **Vinicius Campos** [kazumaki](https://github.com/kazumaki).
