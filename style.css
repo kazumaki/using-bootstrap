@@ -98,7 +98,7 @@ main {
 }
 
 .more-stories-box {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .opinion-box {
@@ -121,7 +121,7 @@ main {
   margin: 0 auto;
 }
 
-.in-the-magazine{
+.in-the-magazine {
   margin-top: 35px;
 }
 
@@ -130,7 +130,7 @@ main {
   padding: 2px;
 }
 
-.in-the-magazine-category .category:first-child{
+.in-the-magazine-category .category:first-child {
   background: red;
 }
 
@@ -172,7 +172,7 @@ main {
   position: relative;
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .featured-stories {
     position: static;
   }
